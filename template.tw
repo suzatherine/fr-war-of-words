@@ -656,7 +656,7 @@ setup.backThirty = () => {
 <<set $showForwards to true>>
 <<set $showBackwards to true>>
 <<set $showCaptionsIcon to false>>
-<<set $map = setup.generateDirectionsMap(53.4030572538972, -2.969504715141457,53.4030572538972, -2.969504715141457)>>
+<<set $map = setup.generateViewMap({originLat: 53.40994792497495,originLong: -2.98035277301383, originName: "Central Library"})>>
 <div id="audio"></div>
 <<include "header">>
 <div class="comp-warning">Best to experience on a phone</div>
@@ -831,7 +831,7 @@ clothing for everyone who ever lived has already been sewn
 <<set $showBackwards to true>>
 <<set $showForwards to true>>
 <<set $showCaptionsIcon to false>>
-<<set $map = setup.generateDirectionsMap(53.4030572538972, -2.969504715141457,53.4030572538972, -2.969504715141457)>>
+<<set $map = setup.generateViewMap({originLat: 53.40994792497495,originLong: -2.98035277301383, originName: "Central Library"})>>
 <div id="audio"></div>
 
 <main class="instructions">
@@ -944,7 +944,7 @@ clothing for everyone who ever lived has already been sewn
 <<set $showBackwards to true>>
 <<set $showForwards to true>>
 <<set $showCaptionsIcon to false>>
-<<set $map = setup.generateDirectionsMap(53.40122672594675, -2.969617415416523,53.40188587934155, -2.97516167308871)>>
+<<set $map =  setup.generateDirectionsMap({originLat: 53.40994792497495,originLong: -2.98035277301383, originName: "Central Library"},"Lovelocks Cafe")>>
 <div id="audio"></div>
 
 <main class="instructions">
@@ -972,7 +972,7 @@ clothing for everyone who ever lived has already been sewn
 <<set $showCaptionsIcon to true>>
 <<set $transcriptname to  "operatranscript">>
 /* Everyman to 1931  */
-<<set $map = setup.generateDirectionsMap({originName: "Liverpool Everyman", originLat: 53.40294244809804, originLong:-2.9694980926454186}, "Liverpool Philharmonic")>>
+<<set $map =  setup.generateDirectionsMap({originLat: 53.40994792497495,originLong: -2.98035277301383, originName: "Central Library"},"Lovelocks Cafe")>>
 <<include "headerstory">>
 <main class="story" id="storyContainer" >
 <audio id="audio" >
@@ -1044,7 +1044,7 @@ Written two years before the full-scale invasion, the fictional world of Chornob
 <<set $showForwards to false>>
 <<set $showCaptionsIcon to false>>
 /* Church  */
-<<set $map = setup.generateDirectionsMap(53.40143323565547, -2.9706816152244295, 53.40143323565547, -2.9706816152244295)>>
+<<set $map =  setup.generateDirectionsMap({originLat: 53.40994792497495,originLong: -2.98035277301383, originName: "Central Library"},"Lovelocks Cafe")>>
 <main class="end">
 <div id="audio"></div>
 <div id="map" class="hide">$map</div>
