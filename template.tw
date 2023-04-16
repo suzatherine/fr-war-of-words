@@ -701,7 +701,7 @@ setup.backThirty = () => {
   <p>Go through the doors and up the escalator to the first floor</p>
   <p>Keep to your right and walk around to enter the Picton Reading Room </p>
   <p>Take a seat amongst the many uniquely bound and rare books</p>
-  <p>There is an escalator directly in front of you to the right</p>
+  <p>There is an escalator directly in front of you to the right [img[Replay|assets/img/escal.png][$passage]] </p>
   <<button "I'm ready">><<goto $nextpass>><</button>>
 <</if>>
 
