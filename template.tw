@@ -940,7 +940,7 @@ clothing for everyone who ever lived has already been sewn
 
  <div class="ar-imgs-container one" id="ARContainer">
     <div class="hidden-img-wrapper touch transparent" id="reveal" >
-        <img src="./assets/img/gifs/ar2closed.gif" class="">
+        <img src="./assets/img/gifs/ar1closed.gif" class="">
       </div>
     <div class="ar-img-wrapper touch bottom" id="initial" >
       <img src="./assets/img/library-outside.jpeg" class="">
