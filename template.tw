@@ -397,7 +397,7 @@ setup.backThirty = () => {
  
   <div class="nav-wrapper">
     <div class="nav-item">
-    <div id="mount"> <span class="comment">Press the image <br> to see it transform</span></div>
+    <div id="mount"> <span class="comment">Press the photo <br> to see it transform</span></div>
     </div></div>
     <div class="nav-wrapper">
     <div class="nav-item">
@@ -666,6 +666,7 @@ setup.backThirty = () => {
 <<set $showBackwards to true>>
 <<set $showCaptionsIcon to false>>
 <<set $map = setup.generateViewMap({originLat: 53.40994792497495,originLong: -2.98035277301383, originName: "Central Library"})>>
+<<audio ":all" stop>><<audio "36" play>>
 <div id="audio"></div>
 <<include "header">>
 <div class="comp-warning">Best to experience on a phone</div>
@@ -696,6 +697,7 @@ setup.backThirty = () => {
 <main class="instructions">
 <div id="map" class="hide">$map</div>
   <<if $openOrClosed is "open">>
+  <<audio ":all" stop>><<audio "37" play>>
   <p>Go through the doors and up the escalator to the first floor</p>
   <p>Keep to your right and walk around to enter the Picton Reading Room </p>
   <p>Take a seat amongst the many uniquely bound and rare books</p>
@@ -704,7 +706,9 @@ setup.backThirty = () => {
 <</if>>
 
   <<if $openOrClosed is "closed">>
-  <p>Take a seat on the benches out front </p>
+  <<audio ":all" stop>><<audio "40" play>>
+  <p>Take a seat on the benches out front to the right</p>
+  <p>Face the huge domed building</p>
   <p>It holds many uniquely bound and rare books</p>
     <<button "I'm ready">><<goto $nextpass>><</button>>
 <</if>>
@@ -723,6 +727,7 @@ setup.backThirty = () => {
 <<set $showCaptionsIcon to true>>
 <<set $showMap to false>>
 <<set $transcriptname to  "wordstranscript">>
+<<audio ":all" stop>><<audio "38" play>>
 <<include "headerstory">>
 <main class="story" id="storyContainer">
 <audio id="audio" >
@@ -846,13 +851,15 @@ clothing for everyone who ever lived has already been sewn
 <main class="instructions">
 <div id="map" class="hide">$map</div>
 <<if $openOrClosed is "open">>
+<<audio ":all" stop>><<audio "39" play>>
   <p>Let me show you some you some photos </p>
-  <p>Stand in the middle of the room of the Picton Reading Room</p>
+  <p>Stand in the middle of the Picton Reading Room</p>
   <p>Hold up your phone</p>
     <<button "Show me">><<goto $nextpass>><</button>>
 <</if>>
 
 <<if $openOrClosed is "closed">>
+<<audio ":all" stop>><<audio "41" play>>
 <p>Let me show you some you some photos </p>
 <p>Stand a few meters back, facing the libraries entrance</p>
 <p>Hold up your phone and press</p>
@@ -874,6 +881,7 @@ clothing for everyone who ever lived has already been sewn
 <<set $showBackwards to true>>
 <<set $showForwards to true>>
 <<set $showCaptionsIcon to false>>
+<<audio ":all" stop>><<audio "39.5" play>>
 /* <<include "header">> */
 /* OPEN */
 <main class="ar">
@@ -954,6 +962,7 @@ clothing for everyone who ever lived has already been sewn
 <<set $showForwards to true>>
 <<set $showCaptionsIcon to false>>
 <<set $map =  setup.generateDirectionsMap({originLat: 53.40994792497495,originLong: -2.98035277301383, originName: "Central Library"},"Lovelocks Cafe")>>
+<<audio ":all" stop>><<audio "42" play>>
 <div id="audio"></div>
 
 <main class="instructions">
@@ -980,6 +989,7 @@ clothing for everyone who ever lived has already been sewn
 <<set $showForwards to true>>
 <<set $showCaptionsIcon to true>>
 <<set $transcriptname to  "operatranscript">>
+<<audio ":all" stop>><<audio "42.5" play>>
 /* Everyman to 1931  */
 <<set $map =  setup.generateDirectionsMap({originLat: 53.40994792497495,originLong: -2.98035277301383, originName: "Central Library"},"Lovelocks Cafe")>>
 <<include "headerstory">>
@@ -999,7 +1009,7 @@ clothing for everyone who ever lived has already been sewn
 
 <<timed 1s>>
   <<replace "#mount">>  
-<p class="comment">You can use the map <<link [img[assets/img/map.png]]>><</link>> to help you get there</p>
+<p class="comment">The map <<link [img[assets/img/map.png]]>><</link>> will help guide you</p>
 <</replace>>
  <</timed>>
 
@@ -1052,6 +1062,7 @@ Written two years before the full-scale invasion, the fictional world of Chornob
 <<set $showBackwards to true>>
 <<set $showForwards to false>>
 <<set $showCaptionsIcon to false>>
+<<audio ":all" stop>>
 /* Church  */
 <<set $map =  setup.generateDirectionsMap({originLat: 53.40994792497495,originLong: -2.98035277301383, originName: "Central Library"},"Lovelocks Cafe")>>
 <main class="end">
