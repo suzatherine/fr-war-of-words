@@ -233,7 +233,16 @@ setup.backThirty = () => {
 
 
 :: StoryInit {"position":"100,100","size":"100,100"}
-<<cacheaudio "premiere" "https://remote.co.com/MoTT/AgentTraining/Sounds/13.%20Challenge%203%20-%202.mp3">>
+<<cacheaudio "36" "./../assets/audio/36.mp3">>
+<<cacheaudio "37" "./../assets/audio/37.mp3">>
+<<cacheaudio "38" "./../assets/audio/38.mp3">>
+<<cacheaudio "39.5" "./../assets/audio/39.5.mp3">>
+<<cacheaudio "39" "./../assets/audio/39.mp3">>
+<<cacheaudio "40" "./../assets/audio/40.mp3">>
+<<cacheaudio "41" "./../assets/audio/41.mp3">>
+<<cacheaudio "42.5" "./../assets/audio/42.5.mp3">>
+<<cacheaudio "42" "./../assets/audio/42.mp3">>
+
 <<waitforaudio>>
 
 
@@ -1054,7 +1063,7 @@ Written two years before the full-scale invasion, the fictional world of Chornob
 <br/>
  <h3>Our Place, in Our City</h3>
  <br/>
-    <a href="https://fr-spirits-concrete-iron.netlify.app/">
+    <a href="https://our-place-our-city.netlify.app/">
 <button>Start</button></a>
 
 
