@@ -222,8 +222,8 @@ setup.backThirty = () => {
 <<cacheaudio "39" "./../assets/audio/39.mp3">>
 <<cacheaudio "40" "./../assets/audio/40.mp3">>
 <<cacheaudio "41" "./../assets/audio/41.mp3">>
-<<cacheaudio "42.5" "./../assets/audio/42.5.mp3">>
-<<cacheaudio "42" "./../assets/audio/42.mp3">>
+<<cacheaudio "42.5" "./../assets/audio/42.5V2.mp3">>
+<<cacheaudio "42" "./../assets/audio/42V2.mp3">>
 
 <<waitforaudio>>
 
@@ -735,7 +735,7 @@ setup.backThirty = () => {
 <<set $showCaptionsIcon to false>>
 
 
-<<set $map = setup.generateViewMap({originLat: 53.40177088748729,originLong: -2.975151932649947, originName: "St Luke’s Bombed Out Church"})>>
+<<set $map = setup.generateViewMap({originLat: 53.40994792497495,originLong: -2.98035277301383, originName: "Liverpool  Liverpool Central Library"})>>
 
 
 <div id="audio"></div>
@@ -922,7 +922,7 @@ setup.backThirty = () => {
 
 :: landing [nobr]
 <<set $title to "War of Words">>
-<<set $location to "Liverpool  Liverpool Central Library">>
+<<set $location to "Liverpool Central Library">>
 <<set $openOrClosed to "closed">>
 <<set $prevpass to "beginning">>
 <<set $passage to "landing">>
