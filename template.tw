@@ -1007,7 +1007,7 @@ setup.backThirty = () => {
 <<include "headerstory">>
 <main class="story" id="storyContainer">
 <audio id="audio" >
-  <source src="https://withfireandrageliverpool.com/audio/WW/WarofWordsV1.mp3">
+  <source src="https://withfireandrageliverpool.com/audio/WW/WarofWordsV2.mp3">
   <track kind="captions" srclang="en" label="English captions" id="captrack" default>
 </audio>
 <div class="poster-wrapper" id="poster">
@@ -1285,7 +1285,7 @@ In occupied cities, Ukrainian and Crimean languages are suppressed and books hav
 <<include "headerstory">>
 <main class="story" id="storyContainer" >
 <audio id="audio" >
-  <source src="https://withfireandrageliverpool.com/audio/WW/operawalkV1.mp3">
+  <source src="https://withfireandrageliverpool.com/audio/WW/operawalkV2.mp3">
   <track kind="captions" srclang="en" label="English captions" id="captrack" default>
 </audio>
 
