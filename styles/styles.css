@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Secular+One&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shippori+Antique+B1&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Spinnaker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap");
 /* CONSTANTS  */
 
 :root {
@@ -14,8 +13,8 @@
   --color-purple: #140246;
   --color-pink: #ff007c;
   --color-orange: #f75146;
-  --font-headings: "Shippori Antique B1", sans-serif;
-  --font-body: "Shippori Antique B1", sans-serif;
+  --font-headings: "Poppins", sans-serif;
+  --font-body: "Poppins", sans-serif;
   --padding: 1.5rem;
 }
 
@@ -119,6 +118,7 @@ header {
   text-align: center;
   font-size: 1.5rem;
   font-family: var(--font-body);
+  margin-block-end: 2rem;
 }
 
 main {
@@ -186,7 +186,7 @@ nav {
 }
 
 .nav-item > button {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
 }
 
 .hide {
@@ -318,6 +318,17 @@ header.credits > .header-item > h3 {
 
 /* INSTRUCTIONS  */
 
+header.standard {
+  justify-content: left;
+}
+header.standard > .header-item > h3.subtitle {
+  text-align: left;
+}
+
+#passage-beginning > main > .menu-wrapper {
+  flex-direction: column;
+}
+
 main.instructions {
   justify-content: flex-start;
 }
@@ -332,6 +343,19 @@ main.story > #mount > p > .link-image > img {
   margin: 0 10px;
 }
 
+.multiple-icon-wrapper > .multiple-icon-item > img,
+.caution > img {
+  width: 30px;
+  margin: 0 10px;
+  margin-block-end: 0.5rem;
+}
+
+.caution > p {
+  font-size: 1.3rem;
+  display: inline;
+  font-style: italic;
+}
+
 main.instructions > #mount > p,
 main.instructions > p {
   background-color: var(--accent-color-secondary);
@@ -340,6 +364,35 @@ main.instructions > p {
   border: black 0.5px solid;
   color: black;
   width: fit-content;
+}
+
+main.instructions > p.amenities {
+  background-color: transparent;
+  padding: inherit;
+  border-radius: inherit;
+  border: inherit;
+  color: white;
+  width: fit-content;
+  text-align: right;
+}
+
+.multiple-icon-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-block-end: 2rem;
+}
+
+.multiple-icon-wrapper > .multiple-icon-item {
+  display: flex;
+  max-width: 25%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.multiple-icon-wrapper > .multiple-icon-item > span {
+  text-align: center;
 }
 
 /* END  */
@@ -373,6 +426,22 @@ main.ar {
   justify-content: flex-start;
 }
 
+header.ar {
+  background-color: var(--color-purple);
+  justify-content: space-between;
+  /* flex-direction: column; */
+}
+
+header.ar > .nav-wrapper > .nav-item > h2 {
+  font-size: 1.8rem;
+  font-size: 2.2rem;
+  max-width: 95%;
+}
+
+header.ar > .nav-wrapper > .nav-item > p.comment {
+  font-size: 1.3rem;
+}
+
 .ar-option-wrapper {
   display: flex;
   flex-direction: column;
@@ -387,7 +456,8 @@ main.ar {
 .ar-imgs-container {
   position: relative;
   width: 100%;
-  max-height: 50vh;
+
+  min-height: 50vh;
 }
 
 /* .ar-imgs-container.one {
@@ -473,6 +543,12 @@ header.story {
   justify-content: space-between;
 }
 
+header > #headerinstmount > p.comment {
+  font-size: 1.6rem;
+  max-width: 80%;
+  margin: auto;
+}
+
 main.story {
   justify-content: flex-start;
   gap: 1.5rem;
@@ -481,13 +557,19 @@ main.story {
 }
 
 main.story > #mount > p.comment,
-.nav-item > #mount > span.comment {
+.nav-item > #mount > span.comment,
+p.comment {
   background-color: var(--accent-color-secondary);
   padding: 6px 8px;
   border-radius: 10px;
   border: black 0.5px solid;
   color: black;
   width: fit-content;
+}
+
+p.comment.center,
+#headerinstmount > p.comment {
+  text-align: center;
 }
 
 main.story.captions {
@@ -563,4 +645,10 @@ main.story > .mount > p {
   100% {
     box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
   }
+}
+
+/* FRAMING  */
+main.framing > p {
+  font-size: 2rem;
+  text-align: center;
 }
