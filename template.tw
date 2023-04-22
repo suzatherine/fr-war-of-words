@@ -1054,7 +1054,7 @@ setup.backThirty = () => {
 
 :: wordstranscript
 
-<h2>Transcript</h2>
+<h2>WAR OF WORDS</h2>
 
 NARRATION BY VERONIKA SKLIAROVA:
 
@@ -1164,7 +1164,7 @@ clothing for everyone who ever lived has already been sewn
 <<set $showBackwards to true>>
 <<set $showForwards to true>>
 <<set $showCaptionsIcon to false>>
-<<set $map = setup.generateViewMap({originLat: 53.40994792497495,originLong: -2.98035277301383, originName: "Liverpool  Liverpool Central Library"})>>
+<<set $map = setup.generateViewMap({originLat: 53.40994792497495,originLong: -2.98035277301383, originName: " Liverpool Central Library"})>>
 <div id="audio"></div>
 
 <main class="instructions">
@@ -1384,7 +1384,7 @@ In occupied cities, Ukrainian and Crimean languages are suppressed and books hav
 
 :: operatranscript
 
-<h2>Transcript</h2>
+<h2>MIXTAPE - OPERA APERTA</h2>
 
 NARRATION BY VERONIKA SKLIAROVA:
 
