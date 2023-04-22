@@ -693,6 +693,9 @@ setup.backThirty = () => {
 <<set $showBackwards to true>>
 <<set $showCaptionsIcon to false>>
 <<set $showMap to false>>
+<audio id="audio" autoplay>
+  <source src="https://withfireandrageliverpool.com/audio/ONB/onboardingp1.mp3">
+</audio>
 
 <main class="instructions" id="">
 <div id="mount"></div>
@@ -733,12 +736,13 @@ setup.backThirty = () => {
 <<set $showForwards to true>>
 <<set $showBackwards to true>>
 <<set $showCaptionsIcon to false>>
+<audio id="audio" autoplay >
+  <source src="https://withfireandrageliverpool.com/audio/ONB/onboardingp2.mp3">
+</audio>
+
+<<set $map = setup.generateViewMap({originLat: 53.40994792497495,originLong: -2.98035277301383, originName: "Liverpool Central Library"})>>
 
 
-<<set $map = setup.generateViewMap({originLat: 53.40994792497495,originLong: -2.98035277301383, originName: "Liverpool  Liverpool Central Library"})>>
-
-
-<div id="audio"></div>
 /* <<include "header">> */
 <main class="instructions">
 <h2>Onboarding</h2>
@@ -791,8 +795,10 @@ setup.backThirty = () => {
 <<set $showForwards to true>>
 <<set $showBackwards to true>>
 <<set $showCaptionsIcon to false>>
+<audio id="audio" autoplay >
+  <source src="https://withfireandrageliverpool.com/audio/ONB/onboardingp3.mp3">
+</audio>
 
-<div id="audio"></div>
 /* <<include "header">> */
 <main class="instructions">
 <h2>Onboarding</h2>
@@ -855,8 +861,9 @@ setup.backThirty = () => {
 <<set $showForwards to true>>
 <<set $showBackwards to true>>
 <<set $showCaptionsIcon to false>>
-
-<div id="audio"></div>
+<audio id="audio" autoplay >
+  <source src="https://withfireandrageliverpool.com/audio/ONB/onboardingp4.mp3">
+</audio>
 /* <<include "header">> */
 <main class="instructions">
 <h2>Onboarding</h2>
@@ -896,12 +903,12 @@ setup.backThirty = () => {
 
    <div class="multiple-icon-wrapper">
       <div class="multiple-icon-item">
-      <img src="assets/img/stepfree.png" >
-    <span>Step-free access </span>
-    </div>
-      <div class="multiple-icon-item">
       <img src="assets/img/wifi.png" >
     <span>Phone Charger  </span>
+    </div>
+        <div class="multiple-icon-item">
+      <img src="assets/img/stepfree.png" >
+    <span>Step-free access </span>
     </div>
       <div class="multiple-icon-item">
       <img src="assets/img/caution.png" >
@@ -933,7 +940,7 @@ setup.backThirty = () => {
 <<set $showForwards to true>>
 <<set $showBackwards to true>>
 <<set $showCaptionsIcon to false>>
-<<set $map = setup.generateViewMap({originLat: 53.40994792497495,originLong: -2.98035277301383, originName: "Liverpool  Liverpool Central Library"})>>
+<<set $map = setup.generateViewMap({originLat: 53.40994792497495,originLong: -2.98035277301383, originName: "Liverpool Central Library"})>>
 <<audio ":all" stop>><<audio "36" play>>
 <div id="audio"></div>
 <<include "header">>
@@ -1049,41 +1056,71 @@ setup.backThirty = () => {
 
 <h2>Transcript</h2>
 
-NARRATOR:
-You have the power to decide, to dive, to realize and recognise Ukraine's rich and interesting culture.
-You ask us: why ban Chekhov? He has done no harm.
+NARRATION BY VERONIKA SKLIAROVA:
+
+You ask us: “why ban Chekhov? He has done no harm”
+
 But we need to rethink the narrative… Language is political and we must reclaim our context and history with words…
+
 It’s Russia’s war against Ukraine not a “conflict”.
+
 24th of February is when the full-scale invasion began, not when the war started 
 It’s “Ukraine” not “the Ukraine”. We are a country, not a territory of Russia.
-Our capital is K Y I V not K I E V
+
+Our capital is K Y I V not K I E V.
+
 We are replacing Russian streets names and monuments for Ukrainian. 
 Tolstoy, for Lesya Ukrainka…
+
 Dostoevsky and Pushkin for Taras Shevchenko and Ivan Franko
+
 And even as our libraries are bombed and our books are burnt, 178 new publishing houses have been established in Ukraine. As writers like Victoria Amelina contemplate the power of words…
 
-VICTORIA AMELINA:
+
+TESTIMONY OF VICTORIA AMELINA:
+
 I am a writer and I moved from fiction to non-fiction, because war is a time to listen to people's stories. And it’s not like there's a need to make things up, the reality is so much more intense.
+
 I'm writing a book called, War and Justice Diary, looking at women, looking at war, and also telling my story of how I turned into a war crimes researcher.
+
 Because when the full-scale invasion began each of us searched for a new role, and after a few months, I started to travel across Ukraine documenting war crimes. 
 Mainly this work includes going to the affected areas, finding eyewitnesses - survivors - and recording their testimonies. 
+
 I recorded the testimonies of the parents of Volodymyr Vakulenko, the well-known poet and children’s writer.
-On March 24th he was taken, from his house in the Izium region where he had had stayed with his son, volunteering. Since then, his family hadn’t see him. 
+
+On March 24th he was taken, from his house in the Izyum region where he had had stayed with his son, volunteering. Since then, his family hadn’t see him. 
+
 In November, we finally got a confirmation that he was one of those whose bodies were discovered in the mass grave.
-I found his war diary, the diary he had written during the occupation of his village. He had hidden it under the terrace in the garden, right before his abduction.
+
+I found his war diary, the diary he had written during the occupation of his village. 
+
+He had hidden it under the terrace in the garden, right before his abduction.
+
 And when he hid it, he told his father, when our guys come, give it to them. He didn't say if our guys come, he said when. He was completely sure that Ukraine would prevail.
+
 This diary shows incredible resilience, faith and hope because Volodymyr ends it with the description of the birds flying over his village, and from this, we can imagine that it's already the second half of March and that spring is coming.
+
 Volodymyr was in the occupied village. He had already experienced, searches of his home, threats, he had been taken and beaten. And still he writes those words that it seems to him that the birds are singing and everything will be Ukraine. I believe in victory. 
+
 I met Volodymyr briefly, and I know he was always very active. He felt he needed to be at Maidan in 2014, and really, he was quite severely wounded there. He wanted to make history and he did make history…but of course, it has come with a price…
+
 You know, for a long time, I believed that empathy is endless. Like how Shakespeare wrote, love is endless, the more you love, the more you have. But in fact, I’ve learnt it has some limits.
+
 Why should I feel empathy for Russians when I have to work as a war crimes researcher, and I'm sitting in front of parents who lost their child?
+
 I'm sure there will be reconciliation, just not now. 
+
 For now, we need to make space finally for Ukrainian writers, artists, composers, heroes…
+
 It’s about power balance. It’s not a coincidence that countries that are or were empires, also promote that they have great cultures.
-It’s why it’s very important to hear different voices
+
+It’s why it’s very important to hear different voices.
+
 It is time to let Ukrainians speak.
 
-MYKHAILO ZHARZHAILO:
+
+POEM CTRL+Z BY MYKHAILO ZHARZHAILO:
+
 They give us Z
 and we give them ctrl+Z or cmd+Z
 ctrl-tZar 
@@ -1349,45 +1386,19 @@ In occupied cities, Ukrainian and Crimean languages are suppressed and books hav
 
 <h2>Transcript</h2>
 
-NARRATOR:
+NARRATION BY VERONIKA SKLIAROVA:
 
 Ukrainian art and culture was always reflective, but even more now than ever. 
 Chornobyldorf by Opera Aperta is about the future we don’t want to live in, the future after a nuclear catastrophe. 
+
 People who survive, wandering the ruins of nuclear power plants, abandoned churches, theatres, and museums. As they try to recreate the lost civilisation through archaeological performance rituals.
+
 Written two years before the full-scale invasion, the fictional world of Chornobyldorf is becoming more and more real each day…
 
-
-
-:: end [nobr]
-<<set $prevpass to "opera">>
-<<set $passage to "end">>
-<<set $nextpass to "end">>
-<<set $showMap to false>>
-<<set $showAudio to false>>
-<<set $showReplay to true>>
-<<set $showBackwards to true>>
-<<set $showForwards to false>>
-<<set $showCaptionsIcon to false>>
-<<audio ":all" stop>>
-/* Church  */
-<<set $map =  setup.generateDirectionsMap({originLat: 53.40994792497495,originLong: -2.98035277301383, originName: " Liverpool Central Library"},"Lovelocks Cafe")>>
-<main class="end">
-<div id="audio"></div>
-<div id="map" class="hide">$map</div>
-<div id="mount"></div>
-<h2>Lovelocks Cafe</h2>
-<p>Would you like to go on another journey?</p>
-<br/>
- <h3>Our Place, in Our City</h3>
- <br/>
-    <a href="https://fr-our-place-in-our-city.netlify.app/">
-<button>Start</button></a>
+(Music from Chornobyldorf by Opera Aperta)
 
 
 
-/* <p>Or back to the main <a href="https://liv-ukr-main.netlify.app/map">map</a></p> */
-</main>
-<<include "footer">>
 
 
 
