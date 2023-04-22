@@ -678,7 +678,7 @@ setup.backThirty = () => {
  <div class="menu-wrapper">
     <<button "Keep going">><<goto $nextpass>><</button>>
      <<button "I'm joining the audio tour here">><<goto "framing">><</button>>
-     <a href="www.withfireandrage.com"><button>Leave the Tour</button></a>
+     <a href="https://www.withfireandrage.com" rel="noreferrer"><button>Leave the Tour</button></a>
 </div>
 </main>
 
