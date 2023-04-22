@@ -15,8 +15,8 @@ War of Words
 :: Story Stylesheet [stylesheet]
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600&display=swap");
 
-@import url("./styles/generics.css");
-@import url("./styles/styles.css");
+@import url("styles/generics.css");
+@import url("styles/styles.css");
 
 
 
@@ -100,8 +100,6 @@ const playpause = document.getElementById("playpause");
 const reveal = document.getElementById("reveal");
      initial.classList.add("transparent");  
      reveal.classList.remove("transparent");  
-
-
 }
 
 const handleMove = (evt) => {
@@ -215,15 +213,15 @@ setup.backThirty = () => {
 
 
 :: StoryInit {"position":"100,100","size":"100,100"}
-<<cacheaudio "36" "./../assets/audio/36.mp3">>
-<<cacheaudio "37" "./../assets/audio/37.mp3">>
-<<cacheaudio "38" "./../assets/audio/38V2.mp3">>
-<<cacheaudio "39.5" "./../assets/audio/39.5.mp3">>
-<<cacheaudio "39" "./../assets/audio/39.mp3">>
-<<cacheaudio "40" "./../assets/audio/40.mp3">>
-<<cacheaudio "41" "./../assets/audio/41.mp3">>
-<<cacheaudio "42.5" "./../assets/audio/42.5V2.mp3">>
-<<cacheaudio "42" "./../assets/audio/42V2.mp3">>
+<<cacheaudio "36" "assets/audio/36.mp3">>
+<<cacheaudio "37" "assets/audio/37.mp3">>
+<<cacheaudio "38" "assets/audio/38V2.mp3">>
+<<cacheaudio "39.5" "assets/audio/39.5.mp3">>
+<<cacheaudio "39" "assets/audio/39.mp3">>
+<<cacheaudio "40" "assets/audio/40.mp3">>
+<<cacheaudio "41" "assets/audio/41.mp3">>
+<<cacheaudio "42.5" "assets/audio/42.5V2.mp3">>
+<<cacheaudio "42" "assets/audio/42V2.mp3">>
 
 <<waitforaudio>>
 
@@ -311,7 +309,7 @@ setup.backThirty = () => {
   <<if $sendOn is true>>
  <div class="nav-wrapper" id="forIcon">
     <div class="nav-item " >
-        <a href="https://fr-our-place-in-our-city.netlify.app/">
+        <a href="https://withfireandrageliverpool.com/place">
 <img src="assets/img/for.png"></a>
     </div>
   </div>
@@ -673,14 +671,45 @@ setup.backThirty = () => {
 <main class="" id="">
 
 <div class="poster-wrapper" id="poster">
-   <img class="poster" src="./../assets/img/words-title.jpeg"/>
+   <img class="poster" src="assets/img/words-title.jpeg"/>
  </div>
  <div class="menu-wrapper">
     <<button "Keep going">><<goto $nextpass>><</button>>
      <<button "I'm joining the audio tour here">><<goto "framing">><</button>>
-     <a href="https://www.withfireandrage.com" rel="noreferrer"><button>Leave the Tour</button></a>
+   <<button "Leave">><<goto "leave">><</button>>
 </div>
 </main>
+
+:: leave [nobr]
+<<set $prevpass to "beginning">>
+<<set $passage to "leave">>
+<<set $nextpass to "leave">>
+<<set $transcript to false>>
+<<set $playToggle to false>>
+<<set $captionToggle to false>>
+<<set $showForwards to false>>
+<<set $showBackwards to true>>
+<<set $showCaptionsIcon to false>>
+<<set $showMap to false>>
+<audio id="audio" autoplay >
+  <source src="https://withfireandrageliverpool.com/audio/ONB/CreditsAltV1.mp3">
+</audio>
+<main class="instructions" id="">
+<div id="mount"></div>
+<p>Thank you for joining me today</p>
+
+<p>With Fire And Rage is created from the testimonies, art, photography, and music of artists across Ukraine </p>
+<p>I invite you to discover their work </p>
+<p>Listen to more online</p>
+<p>Or visit other locations another day</p>
+
+<a href="https://www.withfireandrage.com"  rel="noreferrer" style="color:var(--color-yellow) "><p>withfireandrage.com</p></a>
+
+</main>
+<<include "footer">>
+
+
+
 
 :: framing [nobr]  {"position":"700,175","size":"100,100"}
 <<set $prevpass to "beginning">>
@@ -1018,7 +1047,7 @@ setup.backThirty = () => {
   <track kind="captions" srclang="en" label="English captions" id="captrack" default>
 </audio>
 <div class="poster-wrapper" id="poster">
-   <img class="poster" src="./../assets/img/words.jpeg"/>
+   <img class="poster" src="assets/img/words.jpeg"/>
  </div>
   
 
@@ -1213,10 +1242,10 @@ clothing for everyone who ever lived has already been sewn
 
   <div class="ar-imgs-container one" id="ARContainer">
     <div class="hidden-img-wrapper touch transparent" id="reveal" >
-        <img src="./assets/img/gifs/ar1open.gif" class="">
+        <img src="assets/img/gifs/ar1open.gif" class="">
       </div>
     <div class="ar-img-wrapper touch bottom" id="initial" >
-      <img src="./assets/img/library-inside.jpeg" class="">
+      <img src="assets/img/library-inside.jpeg" class="">
       </div>
   </div>
 
@@ -1262,10 +1291,10 @@ In occupied cities, Ukrainian and Crimean languages are suppressed and books hav
 
  <div class="ar-imgs-container one" id="ARContainer">
     <div class="hidden-img-wrapper touch transparent" id="reveal" >
-        <img src="./assets/img/gifs/ar1closed.gif" class="">
+        <img src="assets/img/gifs/ar1closed.gif" class="">
       </div>
     <div class="ar-img-wrapper touch bottom" id="initial" >
-      <img src="./assets/img/library-outside.jpeg" class="">
+      <img src="assets/img/library-outside.jpeg" class="">
       </div>
   </div>
 </main>
@@ -1328,7 +1357,7 @@ In occupied cities, Ukrainian and Crimean languages are suppressed and books hav
 
 <div id="map" class="">$map</div>
 /* <div class="poster-wrapper hide" id="poster">
-   <img class="poster" src="./../assets/img/obpy.jpeg"/>
+   <img class="poster" src="assets/img/obpy.jpeg"/>
  </div> */
 <div class="caution" ><img src="assets/img/caution.png"><p>Take care crossing roads </p></div>
 <div id="transcript"></div>
@@ -1349,7 +1378,7 @@ In occupied cities, Ukrainian and Crimean languages are suppressed and books hav
   <<timed 4s>>
       <<replace "#headerinstmount">>
     <p class="comment"> Are you outside Lovelocks Cafe? 
-    <a href="https://fr-our-place-in-our-city.netlify.app/">
+    <a href="https://withfireandrageliverpool.com/place">
 <button>I'm here</button></a>
     </p>
     <</replace>>
@@ -1368,7 +1397,7 @@ In occupied cities, Ukrainian and Crimean languages are suppressed and books hav
   <<timed 30s>>
 <<replace "#headerinstmount">>
     <p class="comment"> Are you outside Lovelocks Cafe? 
-    <a href="https://fr-our-place-in-our-city.netlify.app/">
+    <a href="https://withfireandrageliverpool.com/place">
 <button>I'm here</button></a>
     </p>
     <</replace>>

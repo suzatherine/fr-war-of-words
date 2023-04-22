@@ -100,8 +100,8 @@ var LZString={_keyStr:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz01234
 	</div>
 	<!-- UUID://F9E39354-F641-4070-8B45-C337A3FDC8C9// --><tw-storydata name="War of Words" startnode="12" creator="Tweego" creator-version="2.1.1+81d1d71" ifid="F9E39354-F641-4070-8B45-C337A3FDC8C9" zoom="0.6" format="SugarCube" format-version="2.36.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600&display=swap");
 
-@import url("./styles/generics.css");
-@import url("./styles/styles.css");</style><script role="script" id="twine-user-script" type="text/twine-javascript">$('#ui-bar').remove();
+@import url("styles/generics.css");
+@import url("styles/styles.css");</style><script role="script" id="twine-user-script" type="text/twine-javascript">$('#ui-bar').remove();
 $(document.head).find('#style-ui-bar').remove();
 
 // MAKE MAP FUNCTION
@@ -180,8 +180,6 @@ const playpause = document.getElementById("playpause");
 const reveal = document.getElementById("reveal");
      initial.classList.add("transparent");  
      reveal.classList.remove("transparent");  
-
-
 }
 
 const handleMove = (evt) => {
@@ -290,15 +288,15 @@ setup.backThirty = () => {
   const audio = document.getElementById("audio");
   const timeHolder = audio.currentTime;
   audio.currentTime = timeHolder -30;
-  }</script><tw-passagedata pid="1" name="StoryInit" tags="" position="100,100" size="100,100">&lt;&lt;cacheaudio &quot;36&quot; &quot;./../assets/audio/36.mp3&quot;&gt;&gt;
-&lt;&lt;cacheaudio &quot;37&quot; &quot;./../assets/audio/37.mp3&quot;&gt;&gt;
-&lt;&lt;cacheaudio &quot;38&quot; &quot;./../assets/audio/38V2.mp3&quot;&gt;&gt;
-&lt;&lt;cacheaudio &quot;39.5&quot; &quot;./../assets/audio/39.5.mp3&quot;&gt;&gt;
-&lt;&lt;cacheaudio &quot;39&quot; &quot;./../assets/audio/39.mp3&quot;&gt;&gt;
-&lt;&lt;cacheaudio &quot;40&quot; &quot;./../assets/audio/40.mp3&quot;&gt;&gt;
-&lt;&lt;cacheaudio &quot;41&quot; &quot;./../assets/audio/41.mp3&quot;&gt;&gt;
-&lt;&lt;cacheaudio &quot;42.5&quot; &quot;./../assets/audio/42.5V2.mp3&quot;&gt;&gt;
-&lt;&lt;cacheaudio &quot;42&quot; &quot;./../assets/audio/42V2.mp3&quot;&gt;&gt;
+  }</script><tw-passagedata pid="1" name="StoryInit" tags="" position="100,100" size="100,100">&lt;&lt;cacheaudio &quot;36&quot; &quot;assets/audio/36.mp3&quot;&gt;&gt;
+&lt;&lt;cacheaudio &quot;37&quot; &quot;assets/audio/37.mp3&quot;&gt;&gt;
+&lt;&lt;cacheaudio &quot;38&quot; &quot;assets/audio/38V2.mp3&quot;&gt;&gt;
+&lt;&lt;cacheaudio &quot;39.5&quot; &quot;assets/audio/39.5.mp3&quot;&gt;&gt;
+&lt;&lt;cacheaudio &quot;39&quot; &quot;assets/audio/39.mp3&quot;&gt;&gt;
+&lt;&lt;cacheaudio &quot;40&quot; &quot;assets/audio/40.mp3&quot;&gt;&gt;
+&lt;&lt;cacheaudio &quot;41&quot; &quot;assets/audio/41.mp3&quot;&gt;&gt;
+&lt;&lt;cacheaudio &quot;42.5&quot; &quot;assets/audio/42.5V2.mp3&quot;&gt;&gt;
+&lt;&lt;cacheaudio &quot;42&quot; &quot;assets/audio/42V2.mp3&quot;&gt;&gt;
 
 &lt;&lt;waitforaudio&gt;&gt;</tw-passagedata><tw-passagedata pid="2" name="header" tags="nobr" position="100,225" size="100,100">&lt;header class=&quot;standard&quot;&gt;
 &lt;div class=&quot;header-item&quot;&gt;&lt;/div&gt;
@@ -373,7 +371,7 @@ setup.backThirty = () => {
   &lt;&lt;if $sendOn is true&gt;&gt;
  &lt;div class=&quot;nav-wrapper&quot; id=&quot;forIcon&quot;&gt;
     &lt;div class=&quot;nav-item &quot; &gt;
-        &lt;a href=&quot;https://fr-our-place-in-our-city.netlify.app/&quot;&gt;
+        &lt;a href=&quot;https://withfireandrageliverpool.com/place&quot;&gt;
 &lt;img src=&quot;assets/img/for.png&quot;&gt;&lt;/a&gt;
     &lt;/div&gt;
   &lt;/div&gt;
@@ -704,14 +702,39 @@ setup.backThirty = () => {
 &lt;main class=&quot;&quot; id=&quot;&quot;&gt;
 
 &lt;div class=&quot;poster-wrapper&quot; id=&quot;poster&quot;&gt;
-   &lt;img class=&quot;poster&quot; src=&quot;./../assets/img/words-title.jpeg&quot;/&gt;
+   &lt;img class=&quot;poster&quot; src=&quot;assets/img/words-title.jpeg&quot;/&gt;
  &lt;/div&gt;
  &lt;div class=&quot;menu-wrapper&quot;&gt;
     &lt;&lt;button &quot;Keep going&quot;&gt;&gt;&lt;&lt;goto $nextpass&gt;&gt;&lt;&lt;/button&gt;&gt;
      &lt;&lt;button &quot;I&#39;m joining the audio tour here&quot;&gt;&gt;&lt;&lt;goto &quot;framing&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;
-     &lt;a href=&quot;https://www.withfireandrage.com&quot; rel=&quot;noreferrer&quot;&gt;&lt;button&gt;Leave the Tour&lt;/button&gt;&lt;/a&gt;
+   &lt;&lt;button &quot;Leave&quot;&gt;&gt;&lt;&lt;goto &quot;leave&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;
 &lt;/div&gt;
-&lt;/main&gt;</tw-passagedata><tw-passagedata pid="13" name="framing" tags="nobr" position="700,175" size="100,100">&lt;&lt;set $prevpass to &quot;beginning&quot;&gt;&gt;
+&lt;/main&gt;</tw-passagedata><tw-passagedata pid="13" name="leave" tags="nobr" position="350,225" size="100,100">&lt;&lt;set $prevpass to &quot;beginning&quot;&gt;&gt;
+&lt;&lt;set $passage to &quot;leave&quot;&gt;&gt;
+&lt;&lt;set $nextpass to &quot;leave&quot;&gt;&gt;
+&lt;&lt;set $transcript to false&gt;&gt;
+&lt;&lt;set $playToggle to false&gt;&gt;
+&lt;&lt;set $captionToggle to false&gt;&gt;
+&lt;&lt;set $showForwards to false&gt;&gt;
+&lt;&lt;set $showBackwards to true&gt;&gt;
+&lt;&lt;set $showCaptionsIcon to false&gt;&gt;
+&lt;&lt;set $showMap to false&gt;&gt;
+&lt;audio id=&quot;audio&quot; autoplay &gt;
+  &lt;source src=&quot;https://withfireandrageliverpool.com/audio/ONB/CreditsAltV1.mp3&quot;&gt;
+&lt;/audio&gt;
+&lt;main class=&quot;instructions&quot; id=&quot;&quot;&gt;
+&lt;div id=&quot;mount&quot;&gt;&lt;/div&gt;
+&lt;p&gt;Thank you for joining me today&lt;/p&gt;
+
+&lt;p&gt;With Fire And Rage is created from the testimonies, art, photography, and music of artists across Ukraine &lt;/p&gt;
+&lt;p&gt;I invite you to discover their work &lt;/p&gt;
+&lt;p&gt;Listen to more online&lt;/p&gt;
+&lt;p&gt;Or visit other locations another day&lt;/p&gt;
+
+&lt;a href=&quot;https://www.withfireandrage.com&quot;  rel=&quot;noreferrer&quot; style=&quot;color:var(--color-yellow) &quot;&gt;&lt;p&gt;withfireandrage.com&lt;/p&gt;&lt;/a&gt;
+
+&lt;/main&gt;
+&lt;&lt;include &quot;footer&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="14" name="framing" tags="nobr" position="700,175" size="100,100">&lt;&lt;set $prevpass to &quot;beginning&quot;&gt;&gt;
 &lt;&lt;set $passage to &quot;framing&quot;&gt;&gt;
 &lt;&lt;set $nextpass to &quot;instructions&quot;&gt;&gt;
 &lt;&lt;set $transcript to false&gt;&gt;
@@ -750,7 +773,7 @@ setup.backThirty = () => {
 &lt;&lt;/append&gt;&gt;&lt;&lt;/timed&gt;&gt;
  
 &lt;/main&gt;
-&lt;&lt;include &quot;footer&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="14" name="instructions" tags="nobr" position="475,225" size="100,100">&lt;&lt;set $prevpass to &quot;beginning&quot;&gt;&gt;
+&lt;&lt;include &quot;footer&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="15" name="instructions" tags="nobr" position="600,225" size="100,100">&lt;&lt;set $prevpass to &quot;beginning&quot;&gt;&gt;
 &lt;&lt;set $passage to &quot;instructions&quot;&gt;&gt;
 &lt;&lt;set $nextpass to &quot;instructions2&quot;&gt;&gt;
 &lt;&lt;set $showMap to false&gt;&gt;
@@ -806,7 +829,7 @@ setup.backThirty = () => {
   &lt;&lt;/append&gt;&gt;
 &lt;&lt;/timed&gt;&gt;
 &lt;/main&gt;
-&lt;&lt;include &quot;footer&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="15" name="instructions2" tags="nobr" position="600,225" size="100,100">&lt;&lt;set $prevpass to &quot;instructions&quot;&gt;&gt;
+&lt;&lt;include &quot;footer&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="16" name="instructions2" tags="nobr" position="725,225" size="100,100">&lt;&lt;set $prevpass to &quot;instructions&quot;&gt;&gt;
 &lt;&lt;set $passage to &quot;instructions2&quot;&gt;&gt;
 &lt;&lt;set $nextpass to &quot;instructions3&quot;&gt;&gt;
 &lt;&lt;set $showMap to false&gt;&gt;
@@ -867,7 +890,7 @@ setup.backThirty = () => {
   &lt;&lt;/append&gt;&gt;
 &lt;&lt;/timed&gt;&gt;
 &lt;/main&gt;
-&lt;&lt;include &quot;footer&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="16" name="instructions3" tags="nobr" position="725,225" size="100,100">&lt;&lt;set $prevpass to &quot;instructions2&quot;&gt;&gt;
+&lt;&lt;include &quot;footer&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="17" name="instructions3" tags="nobr" position="850,225" size="100,100">&lt;&lt;set $prevpass to &quot;instructions2&quot;&gt;&gt;
 &lt;&lt;set $passage to &quot;instructions3&quot;&gt;&gt;
 &lt;&lt;set $nextpass to &quot;landing&quot;&gt;&gt;
 &lt;&lt;set $showMap to false&gt;&gt;
@@ -939,7 +962,7 @@ setup.backThirty = () => {
   &lt;&lt;/append&gt;&gt;
 &lt;&lt;/timed&gt;&gt;
 &lt;/main&gt;
-&lt;&lt;include &quot;footer&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="17" name="landing" tags="nobr" position="850,225" size="100,100">&lt;&lt;set $title to &quot;War of Words&quot;&gt;&gt;
+&lt;&lt;include &quot;footer&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="18" name="landing" tags="nobr" position="975,225" size="100,100">&lt;&lt;set $title to &quot;War of Words&quot;&gt;&gt;
 &lt;&lt;set $location to &quot;Liverpool Central Library&quot;&gt;&gt;
 &lt;&lt;set $openOrClosed to &quot;closed&quot;&gt;&gt;
 &lt;&lt;set $prevpass to &quot;beginning&quot;&gt;&gt;
@@ -966,7 +989,7 @@ setup.backThirty = () => {
 &lt;p&gt;Is the library  &lt;div class=&quot;inline-btn-wrapper&quot;&gt;&lt;&lt;link &quot;open&quot;&gt;&gt;&lt;&lt;set $openOrClosed to &quot;open&quot;&gt;&gt;&lt;&lt;goto &quot;instnar2&quot;&gt;&gt;&lt;&lt;/link&gt;&gt; or &lt;div class=&quot;inline-btn-wrapper&quot;&gt;&lt;&lt;link &quot;closed&quot;&gt;&gt;&lt;&lt;set $openOrClosed to &quot;closed&quot;&gt;&gt;&lt;&lt;goto &quot;instnar2&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/div&gt;&lt;/div&gt;?&lt;/p&gt;
  
 &lt;/main&gt;
-&lt;&lt;include &quot;footer&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="18" name="instnar2" tags="nobr" position="975,225" size="100,100">&lt;&lt;set $prevpass to &quot;landing&quot;&gt;&gt;
+&lt;&lt;include &quot;footer&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="19" name="instnar2" tags="nobr" position="1100,225" size="100,100">&lt;&lt;set $prevpass to &quot;landing&quot;&gt;&gt;
 &lt;&lt;set $passage to &quot;instnar2&quot;&gt;&gt;
 &lt;&lt;set $nextpass to &quot;words&quot;&gt;&gt;
 &lt;&lt;set $showMap to false&gt;&gt;
@@ -1003,7 +1026,7 @@ setup.backThirty = () => {
     &lt;&lt;button &quot;I&#39;m ready&quot;&gt;&gt;&lt;&lt;goto $nextpass&gt;&gt;&lt;&lt;/button&gt;&gt;
 &lt;&lt;/if&gt;&gt;
 &lt;/main&gt;
-&lt;&lt;include &quot;footer&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="19" name="words" tags="nobr" position="700,175" size="100,100">&lt;&lt;set $prevpass to &quot;instnar2&quot;&gt;&gt;
+&lt;&lt;include &quot;footer&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="20" name="words" tags="nobr" position="700,175" size="100,100">&lt;&lt;set $prevpass to &quot;instnar2&quot;&gt;&gt;
 &lt;&lt;set $passage to &quot;words&quot;&gt;&gt;
 &lt;&lt;set $nextpass to &quot;instnar3&quot;&gt;&gt;
 &lt;&lt;set $transcript to false&gt;&gt;
@@ -1022,7 +1045,7 @@ setup.backThirty = () => {
   &lt;track kind=&quot;captions&quot; srclang=&quot;en&quot; label=&quot;English captions&quot; id=&quot;captrack&quot; default&gt;
 &lt;/audio&gt;
 &lt;div class=&quot;poster-wrapper&quot; id=&quot;poster&quot;&gt;
-   &lt;img class=&quot;poster&quot; src=&quot;./../assets/img/words.jpeg&quot;/&gt;
+   &lt;img class=&quot;poster&quot; src=&quot;assets/img/words.jpeg&quot;/&gt;
  &lt;/div&gt;
   
 
@@ -1051,7 +1074,7 @@ setup.backThirty = () => {
 
 &lt;/main&gt;
 
-&lt;&lt;include &quot;footerstory&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="20" name="wordstranscript" tags="" position="1225,225" size="100,100">&lt;h2&gt;WAR OF WORDS&lt;/h2&gt;
+&lt;&lt;include &quot;footerstory&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="21" name="wordstranscript" tags="" position="100,350" size="100,100">&lt;h2&gt;WAR OF WORDS&lt;/h2&gt;
 
 NARRATION BY VERONIKA SKLIAROVA:
 
@@ -1143,7 +1166,7 @@ if the game is foul
 choose to be the rules
 soon everything will be rich here
 vs
-clothing for everyone who ever lived has already been sewn</tw-passagedata><tw-passagedata pid="21" name="instnar3" tags="nobr" position="100,350" size="100,100">&lt;&lt;set $prevpass to &quot;words&quot;&gt;&gt;
+clothing for everyone who ever lived has already been sewn</tw-passagedata><tw-passagedata pid="22" name="instnar3" tags="nobr" position="225,350" size="100,100">&lt;&lt;set $prevpass to &quot;words&quot;&gt;&gt;
 &lt;&lt;set $passage to &quot;instnar3&quot;&gt;&gt;
 &lt;&lt;if $openOrClosed is &quot;open&quot;&gt;&gt;
   &lt;&lt;set $nextpass to &quot;AR1&quot;&gt;&gt;
@@ -1180,7 +1203,7 @@ clothing for everyone who ever lived has already been sewn</tw-passagedata><tw-p
 
 
 &lt;/main&gt;
-&lt;&lt;include &quot;footer&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="22" name="AR1" tags="nobr" position="450,50" size="100,100">&lt;&lt;set $prevpass to &quot;instnar3&quot;&gt;&gt;
+&lt;&lt;include &quot;footer&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="23" name="AR1" tags="nobr" position="450,50" size="100,100">&lt;&lt;set $prevpass to &quot;instnar3&quot;&gt;&gt;
 &lt;&lt;set $passage to &quot;AR1&quot;&gt;&gt;
 &lt;&lt;set $nextpass to &quot;instnar5&quot;&gt;&gt;
 &lt;&lt;set $showMap to false&gt;&gt;
@@ -1202,10 +1225,10 @@ clothing for everyone who ever lived has already been sewn</tw-passagedata><tw-p
 
   &lt;div class=&quot;ar-imgs-container one&quot; id=&quot;ARContainer&quot;&gt;
     &lt;div class=&quot;hidden-img-wrapper touch transparent&quot; id=&quot;reveal&quot; &gt;
-        &lt;img src=&quot;./assets/img/gifs/ar1open.gif&quot; class=&quot;&quot;&gt;
+        &lt;img src=&quot;assets/img/gifs/ar1open.gif&quot; class=&quot;&quot;&gt;
       &lt;/div&gt;
     &lt;div class=&quot;ar-img-wrapper touch bottom&quot; id=&quot;initial&quot; &gt;
-      &lt;img src=&quot;./assets/img/library-inside.jpeg&quot; class=&quot;&quot;&gt;
+      &lt;img src=&quot;assets/img/library-inside.jpeg&quot; class=&quot;&quot;&gt;
       &lt;/div&gt;
   &lt;/div&gt;
 
@@ -1215,13 +1238,13 @@ clothing for everyone who ever lived has already been sewn</tw-passagedata><tw-p
 &lt;&lt;include &quot;footerAR&quot;&gt;&gt;
 &lt;&lt;done&gt;&gt;
 &lt;&lt;removeclass &quot;#playpause&quot; &quot;playhighlight&quot;&gt;&gt;
-&lt;&lt;set $s to setup.startup(true)&gt;&gt;&lt;&lt;/done&gt;&gt;</tw-passagedata><tw-passagedata pid="23" name="ARtranscript" tags="" position="350,350" size="100,100">Over 50 libraries in Ukraine have experienced damage and destruction.
+&lt;&lt;set $s to setup.startup(true)&gt;&gt;&lt;&lt;/done&gt;&gt;</tw-passagedata><tw-passagedata pid="24" name="ARtranscript" tags="" position="475,350" size="100,100">Over 50 libraries in Ukraine have experienced damage and destruction.
 
 A reported 2,475 libraries, across the country, are currently closed due to damage, funding, or staff being forced to leave their jobs and homes due to the war. 
 
 A lot of libraries have lost their entire collections.
 
-In occupied cities, Ukrainian and Crimean languages are suppressed and books have been banned and burnt.</tw-passagedata><tw-passagedata pid="24" name="AR2" tags="nobr" position="450,50" size="100,100">&lt;&lt;set $prevpass to &quot;instnar3&quot;&gt;&gt;
+In occupied cities, Ukrainian and Crimean languages are suppressed and books have been banned and burnt.</tw-passagedata><tw-passagedata pid="25" name="AR2" tags="nobr" position="450,50" size="100,100">&lt;&lt;set $prevpass to &quot;instnar3&quot;&gt;&gt;
 &lt;&lt;set $passage to &quot;AR2&quot;&gt;&gt;
 &lt;&lt;set $nextpass to &quot;instnar5&quot;&gt;&gt;
 &lt;&lt;set $showMap to false&gt;&gt;
@@ -1243,10 +1266,10 @@ In occupied cities, Ukrainian and Crimean languages are suppressed and books hav
 
  &lt;div class=&quot;ar-imgs-container one&quot; id=&quot;ARContainer&quot;&gt;
     &lt;div class=&quot;hidden-img-wrapper touch transparent&quot; id=&quot;reveal&quot; &gt;
-        &lt;img src=&quot;./assets/img/gifs/ar1closed.gif&quot; class=&quot;&quot;&gt;
+        &lt;img src=&quot;assets/img/gifs/ar1closed.gif&quot; class=&quot;&quot;&gt;
       &lt;/div&gt;
     &lt;div class=&quot;ar-img-wrapper touch bottom&quot; id=&quot;initial&quot; &gt;
-      &lt;img src=&quot;./assets/img/library-outside.jpeg&quot; class=&quot;&quot;&gt;
+      &lt;img src=&quot;assets/img/library-outside.jpeg&quot; class=&quot;&quot;&gt;
       &lt;/div&gt;
   &lt;/div&gt;
 &lt;/main&gt;
@@ -1254,7 +1277,7 @@ In occupied cities, Ukrainian and Crimean languages are suppressed and books hav
 &lt;&lt;include &quot;footerAR&quot;&gt;&gt;
 &lt;&lt;done&gt;&gt;
 &lt;&lt;removeclass &quot;#playpause&quot; &quot;playhighlight&quot;&gt;&gt;
-&lt;&lt;set $s to setup.startup(true)&gt;&gt;&lt;&lt;/done&gt;&gt;</tw-passagedata><tw-passagedata pid="25" name="instnar5" tags="nobr" position="600,350" size="100,100">&lt;&lt;set $prevpass to &quot;instnar3&quot;&gt;&gt;
+&lt;&lt;set $s to setup.startup(true)&gt;&gt;&lt;&lt;/done&gt;&gt;</tw-passagedata><tw-passagedata pid="26" name="instnar5" tags="nobr" position="725,350" size="100,100">&lt;&lt;set $prevpass to &quot;instnar3&quot;&gt;&gt;
 &lt;&lt;set $passage to &quot;instnar5&quot;&gt;&gt;
 &lt;&lt;set $nextpass to &quot;opera&quot;&gt;&gt;
 &lt;&lt;set $showMap to true&gt;&gt;
@@ -1275,7 +1298,7 @@ In occupied cities, Ukrainian and Crimean languages are suppressed and books hav
 
   &lt;&lt;button &quot;Let&#39;s go&quot;&gt;&gt;&lt;&lt;goto $nextpass&gt;&gt;&lt;&lt;/button&gt;&gt;
 &lt;/main&gt;
-&lt;&lt;include &quot;footer&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="26" name="opera" tags="nobr" position="725,350" size="100,100">&lt;&lt;set $prevpass to &quot;instnar5&quot;&gt;&gt;
+&lt;&lt;include &quot;footer&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="27" name="opera" tags="nobr" position="850,350" size="100,100">&lt;&lt;set $prevpass to &quot;instnar5&quot;&gt;&gt;
 &lt;&lt;set $passage to &quot;opera&quot;&gt;&gt;
 &lt;&lt;set $nextpass to &quot;end&quot;&gt;&gt;
 &lt;&lt;set $showMap to true&gt;&gt;
@@ -1299,7 +1322,7 @@ In occupied cities, Ukrainian and Crimean languages are suppressed and books hav
 
 &lt;div id=&quot;map&quot; class=&quot;&quot;&gt;$map&lt;/div&gt;
 /* &lt;div class=&quot;poster-wrapper hide&quot; id=&quot;poster&quot;&gt;
-   &lt;img class=&quot;poster&quot; src=&quot;./../assets/img/obpy.jpeg&quot;/&gt;
+   &lt;img class=&quot;poster&quot; src=&quot;assets/img/obpy.jpeg&quot;/&gt;
  &lt;/div&gt; */
 &lt;div class=&quot;caution&quot; &gt;&lt;img src=&quot;assets/img/caution.png&quot;&gt;&lt;p&gt;Take care crossing roads &lt;/p&gt;&lt;/div&gt;
 &lt;div id=&quot;transcript&quot;&gt;&lt;/div&gt;
@@ -1320,7 +1343,7 @@ In occupied cities, Ukrainian and Crimean languages are suppressed and books hav
   &lt;&lt;timed 4s&gt;&gt;
       &lt;&lt;replace &quot;#headerinstmount&quot;&gt;&gt;
     &lt;p class=&quot;comment&quot;&gt; Are you outside Lovelocks Cafe? 
-    &lt;a href=&quot;https://fr-our-place-in-our-city.netlify.app/&quot;&gt;
+    &lt;a href=&quot;https://withfireandrageliverpool.com/place&quot;&gt;
 &lt;button&gt;I&#39;m here&lt;/button&gt;&lt;/a&gt;
     &lt;/p&gt;
     &lt;&lt;/replace&gt;&gt;
@@ -1339,7 +1362,7 @@ In occupied cities, Ukrainian and Crimean languages are suppressed and books hav
   &lt;&lt;timed 30s&gt;&gt;
 &lt;&lt;replace &quot;#headerinstmount&quot;&gt;&gt;
     &lt;p class=&quot;comment&quot;&gt; Are you outside Lovelocks Cafe? 
-    &lt;a href=&quot;https://fr-our-place-in-our-city.netlify.app/&quot;&gt;
+    &lt;a href=&quot;https://withfireandrageliverpool.com/place&quot;&gt;
 &lt;button&gt;I&#39;m here&lt;/button&gt;&lt;/a&gt;
     &lt;/p&gt;
     &lt;&lt;/replace&gt;&gt;
@@ -1348,7 +1371,7 @@ In occupied cities, Ukrainian and Crimean languages are suppressed and books hav
 
 &lt;/main&gt;
 
-&lt;&lt;include &quot;footerstorywalk&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="27" name="operatranscript" tags="" position="850,350" size="100,100">&lt;h2&gt;MIXTAPE - OPERA APERTA&lt;/h2&gt;
+&lt;&lt;include &quot;footerstorywalk&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="28" name="operatranscript" tags="" position="975,350" size="100,100">&lt;h2&gt;MIXTAPE - OPERA APERTA&lt;/h2&gt;
 
 NARRATION BY VERONIKA SKLIAROVA:
 
