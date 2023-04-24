@@ -133,7 +133,7 @@ iFrame.classList.add("map")
 iFrame.setAttribute("loading", "lazy")
 iFrame.setAttribute("referrerpolicy", "no-referrer-when-downgrade")
 // iFrame.setAttribute("allowfullscreen")
-iFrame.setAttribute("src", `https://www.google.com/maps/embed/v1/directions?key=AIzaSyCSbMwR1cUMfnIAh0Pxi0F1N16kvDGZXGU&center=${origin[0]},${origin[1]}&zoom=18&origin=${origin[0]},${origin[1]}&destination=${dest[0]},${dest[1]}&waypoints=${wayp}&mode=walking`)
+iFrame.setAttribute("src", `https://www.google.com/maps/embed/v1/directions?key=AIzaSyB7uJuBjDcK-tb0aJpTjaKA1ZNLWhEPN5M&center=${origin[0]},${origin[1]}&zoom=18&origin=${origin[0]},${origin[1]}&destination=${dest[0]},${dest[1]}&waypoints=${wayp}&mode=walking`)
 const mount = document.getElementById("mapMount")
 console.log(iFrame)
 return iFrame
@@ -1286,7 +1286,7 @@ In occupied cities, Ukrainian and Crimean languages are suppressed and books hav
 &lt;&lt;set $showBackwards to true&gt;&gt;
 &lt;&lt;set $showForwards to true&gt;&gt;
 &lt;&lt;set $showCaptionsIcon to false&gt;&gt;
-&lt;&lt;set $map =  setup.generateDirectionsMap({originLat: 53.40994792497495,originLong: -2.98035277301383, originName: &quot; Liverpool Central Library&quot;},&quot;Lovelocks Cafe&quot;)&gt;&gt;
+&lt;&lt;set $map = setup.generateDirectionsMapWP([53.40943184031807, -2.980435915683908], [53.409112574615584, -2.9847508284728437], &quot;Dale Street&quot;)&gt;&gt;
 &lt;&lt;audio &quot;:all&quot; stop&gt;&gt;&lt;&lt;audio &quot;42&quot; play&gt;&gt;
 &lt;div id=&quot;audio&quot;&gt;&lt;/div&gt;
 
@@ -1312,7 +1312,10 @@ In occupied cities, Ukrainian and Crimean languages are suppressed and books hav
 &lt;&lt;set $sendOn to true&gt;&gt;
 &lt;&lt;audio &quot;:all&quot; stop&gt;&gt;&lt;&lt;audio &quot;42.5&quot; play&gt;&gt;
 /* Library to Lovelocks  */
-&lt;&lt;set $map =  setup.generateDirectionsMap({originLat: 53.40994792497495,originLong: -2.98035277301383, originName: &quot;Liverpool  Liverpool Central Library&quot;},&quot;Lovelocks Cafe&quot;)&gt;&gt;
+
+
+ &lt;&lt;set $map = setup.generateDirectionsMapWP([53.40943184031807, -2.980435915683908], [53.409112574615584, -2.9847508284728437], &quot;Dale Street&quot;)&gt;&gt;
+
 &lt;&lt;include &quot;headerstory&quot;&gt;&gt;
 &lt;main class=&quot;story&quot; id=&quot;storyContainer&quot; &gt;
 &lt;audio id=&quot;audio&quot; &gt;

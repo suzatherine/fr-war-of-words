@@ -53,7 +53,7 @@ iFrame.classList.add("map")
 iFrame.setAttribute("loading", "lazy")
 iFrame.setAttribute("referrerpolicy", "no-referrer-when-downgrade")
 // iFrame.setAttribute("allowfullscreen")
-iFrame.setAttribute("src", `https://www.google.com/maps/embed/v1/directions?key=AIzaSyCSbMwR1cUMfnIAh0Pxi0F1N16kvDGZXGU&center=${origin[0]},${origin[1]}&zoom=18&origin=${origin[0]},${origin[1]}&destination=${dest[0]},${dest[1]}&waypoints=${wayp}&mode=walking`)
+iFrame.setAttribute("src", `https://www.google.com/maps/embed/v1/directions?key=AIzaSyB7uJuBjDcK-tb0aJpTjaKA1ZNLWhEPN5M&center=${origin[0]},${origin[1]}&zoom=18&origin=${origin[0]},${origin[1]}&destination=${dest[0]},${dest[1]}&waypoints=${wayp}&mode=walking`)
 const mount = document.getElementById("mapMount")
 console.log(iFrame)
 return iFrame
@@ -1315,7 +1315,7 @@ In occupied cities, Ukrainian and Crimean languages are suppressed and books hav
 <<set $showBackwards to true>>
 <<set $showForwards to true>>
 <<set $showCaptionsIcon to false>>
-<<set $map =  setup.generateDirectionsMap({originLat: 53.40994792497495,originLong: -2.98035277301383, originName: " Liverpool Central Library"},"Lovelocks Cafe")>>
+<<set $map = setup.generateDirectionsMapWP([53.40943184031807, -2.980435915683908], [53.409112574615584, -2.9847508284728437], "Dale Street")>>
 <<audio ":all" stop>><<audio "42" play>>
 <div id="audio"></div>
 
@@ -1347,7 +1347,10 @@ In occupied cities, Ukrainian and Crimean languages are suppressed and books hav
 <<set $sendOn to true>>
 <<audio ":all" stop>><<audio "42.5" play>>
 /* Library to Lovelocks  */
-<<set $map =  setup.generateDirectionsMap({originLat: 53.40994792497495,originLong: -2.98035277301383, originName: "Liverpool  Liverpool Central Library"},"Lovelocks Cafe")>>
+
+
+ <<set $map = setup.generateDirectionsMapWP([53.40943184031807, -2.980435915683908], [53.409112574615584, -2.9847508284728437], "Dale Street")>>
+
 <<include "headerstory">>
 <main class="story" id="storyContainer" >
 <audio id="audio" >
