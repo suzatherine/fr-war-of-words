@@ -769,7 +769,7 @@ setup.backThirty = () => {
 &lt;&lt;/append&gt;&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;&lt;timed 8s&gt;&gt;&lt;&lt;append &quot;#mount&quot;&gt;&gt;
-&lt;p&gt;You can move forward via a button like&lt;&lt;button &quot;This&quot;&gt;&gt;&lt;&lt;goto $nextpass&gt;&gt;&lt;&lt;/button&gt;&gt;&lt;/p&gt; 
+&lt;p&gt;To move forward press a button like &lt;&lt;button &quot;Next&quot;&gt;&gt;&lt;&lt;goto $nextpass&gt;&gt;&lt;&lt;/button&gt;&gt;&lt;/p&gt; 
 &lt;&lt;/append&gt;&gt;&lt;&lt;/timed&gt;&gt;
  
 &lt;/main&gt;
@@ -906,7 +906,7 @@ setup.backThirty = () => {
 &lt;main class=&quot;instructions&quot;&gt;
 &lt;h2&gt;Onboarding&lt;/h2&gt;
 &lt;div id=&quot;map&quot; class=&quot;hide&quot;&gt;$map&lt;/div&gt;
-&lt;div id=&quot;mount&quot;&gt;&lt;/div&gt;
+&lt;div id=&quot;mount&quot; class=&quot;onboarding&quot;&gt;&lt;/div&gt;
 &lt;&lt;timed 0.1s&gt;&gt;
   &lt;&lt;append &quot;#mount&quot;&gt;&gt;
     &lt;p&gt;At every location, I will suggest places to sit, to lean, to shelter&lt;/p&gt;
@@ -941,16 +941,16 @@ setup.backThirty = () => {
 
    &lt;div class=&quot;multiple-icon-wrapper&quot;&gt;
       &lt;div class=&quot;multiple-icon-item&quot;&gt;
-      &lt;img src=&quot;assets/img/wifi.png&quot; &gt;
-    &lt;span&gt;Phone Charger  &lt;/span&gt;
-    &lt;/div&gt;
-        &lt;div class=&quot;multiple-icon-item&quot;&gt;
       &lt;img src=&quot;assets/img/stepfree.png&quot; &gt;
     &lt;span&gt;Step-free access &lt;/span&gt;
     &lt;/div&gt;
       &lt;div class=&quot;multiple-icon-item&quot;&gt;
+      &lt;img src=&quot;assets/img/charge.png&quot; &gt;
+    &lt;span&gt;Phone Charger  &lt;/span&gt;
+    &lt;/div&gt;
+      &lt;div class=&quot;multiple-icon-item&quot;&gt;
       &lt;img src=&quot;assets/img/caution.png&quot; &gt;
-    &lt;span&gt;Caution! take care crossing roads&lt;/span&gt;
+    &lt;span&gt;Caution!&lt;/span&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -983,7 +983,7 @@ setup.backThirty = () => {
 
 &lt;div id=&quot;map&quot; class=&quot;hide&quot;&gt;$map&lt;/div&gt;
 
-&lt;p&gt;You should be outside Liverpool  Liverpool Central Library&lt;/p&gt;
+&lt;p&gt;You should be outside Liverpool Central Library&lt;/p&gt;
 &lt;p&gt;The walkway is engraved with famous titles from books, films and music&lt;/p&gt;
 &lt;p&gt;You can crack the mystery code, by placing the red letters in order&lt;/p&gt;
 &lt;p&gt;Is the library  &lt;div class=&quot;inline-btn-wrapper&quot;&gt;&lt;&lt;link &quot;open&quot;&gt;&gt;&lt;&lt;set $openOrClosed to &quot;open&quot;&gt;&gt;&lt;&lt;goto &quot;instnar2&quot;&gt;&gt;&lt;&lt;/link&gt;&gt; or &lt;div class=&quot;inline-btn-wrapper&quot;&gt;&lt;&lt;link &quot;closed&quot;&gt;&gt;&lt;&lt;set $openOrClosed to &quot;closed&quot;&gt;&gt;&lt;&lt;goto &quot;instnar2&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/div&gt;&lt;/div&gt;?&lt;/p&gt;
@@ -1197,7 +1197,7 @@ clothing for everyone who ever lived has already been sewn</tw-passagedata><tw-p
 &lt;&lt;audio &quot;:all&quot; stop&gt;&gt;&lt;&lt;audio &quot;41&quot; play&gt;&gt;
 &lt;p&gt;Let me show you some you some photos &lt;/p&gt;
 &lt;p&gt;Stand a few meters back, facing the libraries entrance&lt;/p&gt;
-&lt;p&gt;Hold up your phone and press&lt;/p&gt;
+&lt;p&gt;Hold up your phone&lt;/p&gt;
   &lt;&lt;button &quot;Show Me&quot;&gt;&gt;&lt;&lt;goto $nextpass&gt;&gt;&lt;&lt;/button&gt;&gt;
 &lt;&lt;/if&gt;&gt;
 

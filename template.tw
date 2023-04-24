@@ -747,7 +747,7 @@ setup.backThirty = () => {
 <</append>><</timed>>
 
 <<timed 8s>><<append "#mount">>
-<p>You can move forward via a button like<<button "This">><<goto $nextpass>><</button>></p> 
+<p>To move forward press a button like <<button "Next">><<goto $nextpass>><</button>></p> 
 <</append>><</timed>>
  
 </main>
@@ -897,7 +897,7 @@ setup.backThirty = () => {
 <main class="instructions">
 <h2>Onboarding</h2>
 <div id="map" class="hide">$map</div>
-<div id="mount"></div>
+<div id="mount" class="onboarding"></div>
 <<timed 0.1s>>
   <<append "#mount">>
     <p>At every location, I will suggest places to sit, to lean, to shelter</p>
@@ -932,16 +932,16 @@ setup.backThirty = () => {
 
    <div class="multiple-icon-wrapper">
       <div class="multiple-icon-item">
-      <img src="assets/img/wifi.png" >
-    <span>Phone Charger  </span>
-    </div>
-        <div class="multiple-icon-item">
       <img src="assets/img/stepfree.png" >
     <span>Step-free access </span>
     </div>
       <div class="multiple-icon-item">
+      <img src="assets/img/charge.png" >
+    <span>Phone Charger  </span>
+    </div>
+      <div class="multiple-icon-item">
       <img src="assets/img/caution.png" >
-    <span>Caution! take care crossing roads</span>
+    <span>Caution!</span>
     </div>
 </div>
 
@@ -978,7 +978,7 @@ setup.backThirty = () => {
 
 <div id="map" class="hide">$map</div>
 
-<p>You should be outside Liverpool  Liverpool Central Library</p>
+<p>You should be outside Liverpool Central Library</p>
 <p>The walkway is engraved with famous titles from books, films and music</p>
 <p>You can crack the mystery code, by placing the red letters in order</p>
 <p>Is the library  <div class="inline-btn-wrapper"><<link "open">><<set $openOrClosed to "open">><<goto "instnar2">><</link>> or <div class="inline-btn-wrapper"><<link "closed">><<set $openOrClosed to "closed">><<goto "instnar2">><</link>></div></div>?</p>
@@ -1210,7 +1210,7 @@ clothing for everyone who ever lived has already been sewn
 <<audio ":all" stop>><<audio "41" play>>
 <p>Let me show you some you some photos </p>
 <p>Stand a few meters back, facing the libraries entrance</p>
-<p>Hold up your phone and press</p>
+<p>Hold up your phone</p>
   <<button "Show Me">><<goto $nextpass>><</button>>
 <</if>>
 

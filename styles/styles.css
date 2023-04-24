@@ -343,6 +343,10 @@ main.story > #mount > p > .link-image > img {
   margin: 0 10px;
 }
 
+.header-item > .multiple-icon-wrapper {
+  justify-content: flex-start;
+}
+
 .multiple-icon-wrapper > .multiple-icon-item > img,
 .caution > img {
   width: 30px;
@@ -393,6 +397,15 @@ main.instructions > p.amenities {
 
 .multiple-icon-wrapper > .multiple-icon-item > span {
   text-align: center;
+}
+
+.onboarding > .multiple-icon-wrapper > .multiple-icon-item {
+  width: 33%;
+  max-width: 33%;
+}
+
+.onboarding > .multiple-icon-wrapper > .multiple-icon-item > span {
+  font-size: 1.2rem;
 }
 
 /* END  */
@@ -460,9 +473,9 @@ header.ar > .nav-wrapper > .nav-item > p.comment {
   min-height: 50vh;
 }
 
-/* .ar-imgs-container.one {
-  background-image: url("assets/img/le15.jpeg");
-} */
+main.ar.portrait > .ar-imgs-container {
+  min-height: 60vh;
+}
 
 .ar-img-wrapper,
 .hidden-img-wrapper {
