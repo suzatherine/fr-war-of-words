@@ -1009,6 +1009,8 @@ setup.backThirty = () => {
   <p>Keep to your right and walk around to enter the Picton Reading Room </p>
   <p>Take a seat amongst the many uniquely bound and rare books</p>
     <div class="caution" ><img src="assets/img/stepfree.png"><p>Lift past reception to the right </p></div>
+     <div class="caution" ><img src="assets/img/charge.png"><p>Ask at reception</p></div>
+         <br>
     <br/>
   <<button "I'm ready">><<goto $nextpass>><</button>>
 <</if>>
@@ -1349,7 +1351,7 @@ In occupied cities, Ukrainian and Crimean languages are suppressed and books hav
 /* Library to Lovelocks  */
 
 
- <<set $map = setup.generateDirectionsMapWP([53.40943184031807, -2.980435915683908], [53.409112574615584, -2.9847508284728437], "Dale Street")>>
+ <<set $map = setup.generateDirectionsMapWP([53.40943184031807, -2.980435915683908], [53.409112574615584, -2.9847508284728437], "Liverpool L3 2AL")>>
 
 <<include "headerstory">>
 <main class="story" id="storyContainer" >
@@ -1378,7 +1380,7 @@ In occupied cities, Ukrainian and Crimean languages are suppressed and books hav
   <<replace "#headerinstmount">>  
 <p class="comment">As you begin to walk press  <div class="inline-btn-wrapper">
 <<link "play">>
-  <<timed 4s>>
+  <<timed 15s>>
       <<replace "#headerinstmount">>
     <p class="comment"> Are you outside Lovelocks Cafe? 
     <a href="https://withfireandrageliverpool.com/place">

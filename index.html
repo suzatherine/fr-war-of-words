@@ -1011,6 +1011,8 @@ setup.backThirty = () => {
   &lt;p&gt;Keep to your right and walk around to enter the Picton Reading Room &lt;/p&gt;
   &lt;p&gt;Take a seat amongst the many uniquely bound and rare books&lt;/p&gt;
     &lt;div class=&quot;caution&quot; &gt;&lt;img src=&quot;assets/img/stepfree.png&quot;&gt;&lt;p&gt;Lift past reception to the right &lt;/p&gt;&lt;/div&gt;
+     &lt;div class=&quot;caution&quot; &gt;&lt;img src=&quot;assets/img/charge.png&quot;&gt;&lt;p&gt;Ask at reception&lt;/p&gt;&lt;/div&gt;
+         &lt;br&gt;
     &lt;br/&gt;
   &lt;&lt;button &quot;I&#39;m ready&quot;&gt;&gt;&lt;&lt;goto $nextpass&gt;&gt;&lt;&lt;/button&gt;&gt;
 &lt;&lt;/if&gt;&gt;
@@ -1314,7 +1316,7 @@ In occupied cities, Ukrainian and Crimean languages are suppressed and books hav
 /* Library to Lovelocks  */
 
 
- &lt;&lt;set $map = setup.generateDirectionsMapWP([53.40943184031807, -2.980435915683908], [53.409112574615584, -2.9847508284728437], &quot;Dale Street&quot;)&gt;&gt;
+ &lt;&lt;set $map = setup.generateDirectionsMapWP([53.40943184031807, -2.980435915683908], [53.409112574615584, -2.9847508284728437], &quot;Liverpool L3 2AL&quot;)&gt;&gt;
 
 &lt;&lt;include &quot;headerstory&quot;&gt;&gt;
 &lt;main class=&quot;story&quot; id=&quot;storyContainer&quot; &gt;
@@ -1343,7 +1345,7 @@ In occupied cities, Ukrainian and Crimean languages are suppressed and books hav
   &lt;&lt;replace &quot;#headerinstmount&quot;&gt;&gt;  
 &lt;p class=&quot;comment&quot;&gt;As you begin to walk press  &lt;div class=&quot;inline-btn-wrapper&quot;&gt;
 &lt;&lt;link &quot;play&quot;&gt;&gt;
-  &lt;&lt;timed 4s&gt;&gt;
+  &lt;&lt;timed 15s&gt;&gt;
       &lt;&lt;replace &quot;#headerinstmount&quot;&gt;&gt;
     &lt;p class=&quot;comment&quot;&gt; Are you outside Lovelocks Cafe? 
     &lt;a href=&quot;https://withfireandrageliverpool.com/place&quot;&gt;
