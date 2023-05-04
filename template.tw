@@ -42,7 +42,7 @@ iFrame.setAttribute("referrerpolicy", "no-referrer-when-downgrade")
 // iFrame.setAttribute("src", `https://www.google.com/maps/embed/v1/directions?key=AIzaSyB7uJuBjDcK-tb0aJpTjaKA1ZNLWhEPN5M&center=${originLat},${originLong}&zoom=17&origin=${originPlaceId}&destination=${destination}&mode=walking`)
 iFrame.setAttribute("src", `https://www.google.com/maps/embed/v1/directions?key=AIzaSyB7uJuBjDcK-tb0aJpTjaKA1ZNLWhEPN5M&center=${originLat},${originLong}&zoom=17&origin=${originName}&destination=${destination}${waypointsString}&mode=walking`)
 const mount = document.getElementById("mapMount")
-console.log(iFrame)
+// console.log(iFrame)
 return iFrame
 // this.mapMount.appendChild(iFrame)
 }
@@ -55,7 +55,7 @@ iFrame.setAttribute("referrerpolicy", "no-referrer-when-downgrade")
 // iFrame.setAttribute("allowfullscreen")
 iFrame.setAttribute("src", `https://www.google.com/maps/embed/v1/directions?key=AIzaSyB7uJuBjDcK-tb0aJpTjaKA1ZNLWhEPN5M&center=${origin[0]},${origin[1]}&zoom=18&origin=${origin[0]},${origin[1]}&destination=${dest[0]},${dest[1]}&waypoints=${wayp}&mode=walking`)
 const mount = document.getElementById("mapMount")
-console.log(iFrame)
+// console.log(iFrame)
 return iFrame
 // this.mapMount.appendChild(iFrame)
 }
@@ -74,7 +74,7 @@ iFrame.setAttribute("referrerpolicy", "no-referrer-when-downgrade")
 // iFrame.setAttribute("allowfullscreen")
 iFrame.setAttribute("src", `https://www.google.com/maps/embed/v1/place?key=AIzaSyB7uJuBjDcK-tb0aJpTjaKA1ZNLWhEPN5M&center=${originLat},${originLong}&q=${originName}&zoom=17`)
 const mount = document.getElementById("mapMount")
-console.log(iFrame)
+// console.log(iFrame)
 return iFrame
 // this.mapMount.appendChild(iFrame)
 }
@@ -222,6 +222,8 @@ setup.backThirty = () => {
 <<cacheaudio "41" "assets/audio/41.mp3">>
 <<cacheaudio "42.5" "assets/audio/42.5V2.mp3">>
 <<cacheaudio "42" "assets/audio/42V2.mp3">>
+<<cacheaudio "PD12" "assets/audio/PD12-V1.mp3">>
+
 
 <<waitforaudio>>
 
@@ -289,6 +291,22 @@ setup.backThirty = () => {
     <p class="comment">Press the photo <br> to see it transform</p>
     </div>
     </div>
+    
+</header>
+
+:: headerEm [nobr]{"position":"100,225","size":"100,100"}
+
+<header class="ar" >
+ <div class="nav-wrapper">
+    <div class="nav-item">
+  <h2>$ARtitle</h2>
+ </div>
+ </div>
+ /* <div class="nav-wrapper">
+    <div class="nav-item">
+
+    </div>
+    </div> */ 
     
 </header>
 
@@ -1221,10 +1239,12 @@ clothing for everyone who ever lived has already been sewn
 <<include "footer">>
 
 
+
+
 :: AR1 [nobr]{"position":"450,50","size":"100,100"}
 <<set $prevpass to "instnar3">>
 <<set $passage to "AR1">>
-<<set $nextpass to "instnar5">>
+<<set $nextpass to "embroid1">>
 <<set $showMap to false>>
 <<set $showAudio to false>>
 <<set $showReplay to true>>
@@ -1305,6 +1325,82 @@ In occupied cities, Ukrainian and Crimean languages are suppressed and books hav
 <<done>>
 <<removeclass "#playpause" "playhighlight">>
 <<set $s to setup.startup(true)>><</done>>
+
+:: embroid1 [nobr]
+<<set $prevpass to "AR1">>
+<<set $passage to "embroid1">>
+<<set $nextpass to "embroid2">>
+<<set $showMap to false>>
+<<set $showAudio to false>>
+<<set $showReplay to true>>
+<<set $showBackwards to true>>
+<<set $showForwards to true>>
+<<set $showCaptionsIcon to false>>
+
+<<audio ":all" stop>><<audio "PD12" play>>
+<div id="audio"></div>
+
+<main class="instructions">
+
+<p>Can you spot the black and white embroidered art?</p>
+
+<p>It’s hanging up inside the library </p>
+
+ <div class="caution" ><img src="assets/img/caution.png"><p>Its near the escalator on the ground floor</p></div>
+<br/>
+  <<button "Yes">><<goto $nextpass>><</button>>
+</main>
+<<include "footer">>
+
+
+
+:: embroid2 [nobr]{"position":"450,50","size":"100,100"}
+<<set $prevpass to "instnar3">>
+<<set $passage to "AR2">>
+<<set $nextpass to "instnar5">>
+<<set $showMap to false>>
+<<set $showAudio to false>>
+<<set $showReplay to true>>
+<<set $showBackwards to true>>
+<<set $showForwards to true>>
+<<set $showCaptionsIcon to false>>
+<<set $ARtitle to "Writer Yurii Shevelov">>
+<<set $transcriptname to  "Emtranscript">>
+<<audio ":all" stop>>
+
+<<include "headerEm">>
+<audio id="audio" autoplay>
+  <source src="https://withfireandrageliverpool.com/audio/WW/PD13V1.mp3">
+
+</audio>
+<main class="ar">
+
+ <div class="ar-imgs-container one" id="ARContainer">
+  
+      <img src="assets/img/shevelov.jpeg" class="">
+
+  </div>
+  <div id="transcript"></div>
+</main>
+
+<<include "footerAR">>
+<<done>>
+<<addclass "#playpause" "playhighlight">>
+<</done>>
+
+
+:: Emtranscript
+<br>
+Yurii Shevelov was a writer and linguist.
+
+He published more than 600 scholarly texts focused on different aspects of the philology of Ukrainian and other Slavic languages.
+
+Shevelov proved that the Ukrainian language didn’t originate from Russian. And instead, had its own roots which could be traced to the 7th century.
+
+Shevelov was also an amazing political philosopher. He wrote his vision of the Ukranian future. 
+
+A Fifth Kharkiv, imagined Ukrainian subjectivity in the European context. This was during a time it seemed impossible to break away from the Soviet empire.
+
 
 
 :: instnar5 [nobr]
